@@ -1,0 +1,67 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+nav{
+    border: 3px solid #DAA520;
+    height: 200px;
+    display: flex;
+    gap: 10px;
+
+}
+#logo-empresa{
+    flex: 1;
+  
+}
+img{
+    padding: 10px;
+    height: 200px;
+    width: 100%;
+}
+#slogan{
+    flex: 1;
+    padding: 50px;
+    text-align: center;
+}
+#login-cadrasto{
+    flex: 1;
+    ;
+}
+.conteudo{
+    display: flex;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    height: 300px;
+    width: 100%;
+    padding: 40px;
+}
+footer{
+    margin-top: 150px;
+    border: 3px solid #DAA520;
+    height: 200px;
+    display: flex;
+    gap: 10px;
+}
+#text{
+    flex: 1;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px;
+    margin-top: 50px;
+}
+#img1{
+    height: 50px;
+    width: 20%; 
+}
+#img2{
+    height: 50px;
+    width: 20%;
+}
+#img3{
+    height: 50px;
+    width: 20%;
+}
+#img4{
+    height: 50px;
+    width: 20%;
+}
