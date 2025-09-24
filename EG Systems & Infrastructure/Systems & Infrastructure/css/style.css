@@ -1,0 +1,397 @@
+/* Remove margens e padding padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Define fonte e cores gerais */
+body {
+    font-family: Arial, sans-serif;
+    color: #fff; /* Texto branco */
+    background-color: #000; /* Fundo preto */
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #111; /* Fundo preto suave */
+    color: #fff;
+    padding: 20px;
+    border-bottom: 3px solid #d4af37; /* Linha dourada */
+    
+    display: flex;              /* Coloca elementos lado a lado */
+    justify-content: space-between; /* Espaço entre logo e os outros itens */
+    align-items: center;        /* Centraliza verticalmente */
+}
+
+/* Ajusta logo para esquerda */
+header .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espaço entre imagem e texto */
+}
+
+header .logo img {
+    width: 80px; /* Tamanho da logo */
+}
+
+/*Botão Login */
+/* Container para Login e Cadastro */
+header .auth-links {
+    display: flex;         /* Coloca lado a lado */
+    gap: 10px;             /* Espaçamento pequeno entre eles */
+}
+
+/* Botão Home */
+header .home {
+    text-decoration: none;
+    color: #fff;
+    background-color: #d4af37;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: transform 0.3s ease; /* Animação hover */
+}
+
+/* Botão Login */
+header .login {
+    text-decoration: none;
+    color: #fff;
+    background-color: #d4af37;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: transform 0.3s ease; /* Animação hover */
+}
+
+/* Botão Cadastro */
+header .cadastro {
+    text-decoration: none;
+    color: #fff;
+    background-color: #d4af37;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: transform 0.3s ease; /* Animação hover */
+}
+
+/* Efeito hover no home */
+header .home:hover {
+    transform: scale(1.1);       /* Aumenta um pouco o tamanho */
+    border: 2px solid #fff;      /* Borda branca ao passar o mouse */
+}
+
+/* Efeito hover no Login */
+header .login:hover {
+    transform: scale(1.1);       /* Aumenta um pouco o tamanho */
+    border: 2px solid #fff;      /* Borda branca ao passar o mouse */
+}
+
+/* Efeito hover no Cadastro */
+header .cadastro:hover {
+    transform: scale(1.1);       /* Aumenta um pouco o tamanho */
+    border: 2px solid #fff;      /* Borda branca ao passar o mouse */
+}
+
+header .home{
+    border: 2px solid transparent;      /* Borda tranparente ao passar o mouse */
+}
+
+header .login{
+    border: 2px solid transparent;      /* Borda tranparente ao passar o mouse */
+}
+
+header .cadastro{
+    border: 2px solid transparent;      /* Borda tranparente ao passar o mouse */
+}
+
+/* Seção de apresentação */
+.intro {
+    padding: 30px;
+    max-width: 1000px;
+    margin: auto;
+    text-align: justify;
+    font-size: 16px;
+}
+
+/* Seção softwares */
+.softwares {
+    text-align: center;
+    padding: 30px;
+    background-color: #111;
+}
+
+/* Título softwares */
+.softwares h2 {
+    color: #d4af37;
+    margin-bottom: 20px;
+}
+
+/* Layout das logos */
+.software-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Quebra linha se necessário */
+    gap: 30px;
+}
+
+/* Cada software */
+.software-item {
+    background: #000;
+    border: 2px solid #d4af37; /* Moldura dourada */
+    border-radius: 10px;
+    padding: 15px;
+    width: 150px;
+    text-align: center;
+    transition: transform 0.3s ease; /* Animação hover */
+}
+.software-item img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+.software-item p {
+    font-weight: bold;
+    color: #fff;
+}
+
+/* Efeito hover */
+.software-item:hover {
+    transform: scale(1.1);
+    border-color: #fff; /* Destaque no hover */
+}
+
+/* PÁGINA DE LOGIN*/
+/* LOGIN BOX */
+
+.login-box .btn {
+    width: 100%;
+    padding: 10px;
+    background: linear-gradient(90deg, #d4af37, #b8860b);
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #000;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: transform 0.2s;
+}
+
+.login-box .btn:hover {
+    transform: scale(1.05);
+}
+
+/* MAIN layout: centra seções e dá espaçamento */
+main{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+/* LOGIN SECTION: centraliza verticalmente a caixa no espaço visível */
+.login-section{
+  width: 100%;
+  min-height: calc(60vh - 40px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+/* Caixa de login (estética preta com borda dourada) */
+.login-box{
+  margin-top: 30px;
+  width: 380px;
+  max-width: calc(100% - 48px);
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border: 1.5px solid rgba(212,175,55,0.9);
+  border-radius: var(--radius);
+  padding: 28px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.6);
+  text-align: center;
+}
+
+/* Título do formulário */
+.login-box h2{
+  font-size: 1.6rem;
+  margin-bottom: 14px;
+  color: #fff;
+}
+
+/* Inputs com borda dourada e fundo transparente */
+.login-box input{
+  width: 100%;
+  padding: 12px 14px;
+  margin: 10px 0;
+  background: transparent;
+  border-radius: 8px;
+  border: 1px solid rgba(212,175,55,0.5);
+  color: #fff;
+  outline: none;
+  transition: border-color .18s ease, box-shadow .18s ease, transform .12s ease;
+  font-size: 0.97rem;
+}
+.login-box input::placeholder{ color: #bdbdbd; }
+
+/* foco no input: borda mais viva */
+.login-box input:focus{
+  border-color: var(--gold);
+  box-shadow: 0 6px 18px rgba(212,175,55,0.06);
+  transform: translateY(-1px);
+}
+
+/* botão principal do login */
+.login-box .login-btn{
+  width: 100%;
+  margin-top: 12px;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 800;
+  background: linear-gradient(90deg,var(--gold),var(--gold-dark));
+  color: #000;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.55);
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+.login-box .login-btn:hover{
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 14px 36px rgba(212,175,55,0.18);
+}
+
+/* link esqueci */
+.login-box .forgot{
+  display: inline-block;
+  margin-top: 10px;
+  color: var(--muted);
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+/* Testimonials (rodapé da página) */
+.testimonials{
+  width: 100%;
+  padding: 40px 6%;
+  background-color: #111;
+}
+.testimonials h3{
+  color: var(--gold);
+  text-align: center;
+  font-size: 1.25rem;
+  margin-bottom: 18px;
+}
+
+/* grid responsivo de cards */
+.cards{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.card{
+  background: rgba(255,255,255,0.01);
+  border: 1px solid rgba(212,175,55,0.25);
+  border-radius: 10px;
+  padding: 14px;
+  color: #fff;
+  min-height: 120px;
+}
+.card img{ width: 52px; height: 52px; border-radius: 50%; object-fit: cover; margin-bottom: 8px; }
+
+/* pequenas melhorias visuais e responsividade */
+@media (max-width: 900px){
+  header { padding: 12px 20px; grid-template-columns: auto 1fr auto; }
+  header .site-title { font-size: 1rem; }
+  .login-box { width: 340px; padding: 22px; }
+}
+
+@media (max-width: 600px){
+  /* agrupa título e nav para caber melhor em telas pequenas */
+  header{
+    grid-template-columns: 1fr auto;
+    padding: 10px 14px;
+  }
+  header .site-title{ display: none; } /* esconde o título para priorizar logo e ações */
+  .login-box { width: 92%; padding: 18px; }
+  .cards { grid-template-columns: 1fr; }
+}
+
+/*Página de Cadastro*/
+
+/* Container do formulário */
+.container {
+  background: transparent;
+  padding: 40px;
+  border-radius: 12px;
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+  border: 1.5px solid rgba(212,175,55,0.9);
+
+  /* Centralização total */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+/* Campos do formulário */
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #d4a23f;
+  border-radius: 8px;
+  background: #000;
+  color: #fff;
+  font-size: 14px;
+}
+
+.phone-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.phone-group img {
+  width: 28px;
+  height: 20px;
+  border: 1px solid #d4a23f;
+  border-radius: 4px;
+}
+
+.phone-group .ddd {
+  width: 60px;
+  text-align: center;
+}
+
+/* Botão */
+button {
+  width: 100%;
+  padding: 12px;
+  background: #d4a23f;
+  border: none;
+  border-radius: 8px;
+  color: #000;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+button:hover {
+  background: #b5832c;
+}
